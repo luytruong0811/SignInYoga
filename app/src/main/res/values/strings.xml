@@ -2,4 +2,7 @@
     <string name="app_name">SignInYoga</string>
     <string name="change_starts_here">Change Starts Here</string>
     <string name="describe">Save your progress to access your personal trainning program!</string>
+    <string name="email">EMAIL</string>
+    <string name="facebook">FACEBOOK</string>
+    <string name="google">GOOGLE</string>
 </resources>

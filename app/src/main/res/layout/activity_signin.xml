@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="264dp"
-        android:layout_height="264dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -45,5 +45,111 @@
         android:lineHeight="21.86dp"
         android:gravity="center"
         tools:targetApi="p"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sign_in_with_email"
+        android:layout_width="293dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_button_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_describe"
+        android:layout_marginTop="54dp">
+        <ImageView
+            android:id="@+id/iv_icon_email"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="110dp"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_email"
+            android:layout_marginStart="9dp"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:lineHeight="21.86dp"
+            tools:ignore="RtlCompat"
+            tools:targetApi="p" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sign_in_with_facebook"
+        android:layout_width="293dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_button_facebook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_sign_in_with_email"
+        android:layout_marginTop="24dp">
+        <ImageView
+            android:id="@+id/iv_icon_facebook"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="93dp"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/tv_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_facebook"
+            android:layout_marginStart="9dp"
+            android:text="@string/facebook"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:lineHeight="21.86dp"
+            tools:ignore="RtlCompat"
+            tools:targetApi="p" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_sign_in_with_google"
+        android:layout_width="293dp"
+        android:layout_height="46dp"
+        android:background="@drawable/custom_button_google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cl_sign_in_with_facebook"
+        android:layout_marginTop="24dp">
+        <ImageView
+            android:id="@+id/iv_icon_google"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/google"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="93dp"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/tv_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_icon_google"
+            android:layout_marginStart="13dp"
+            android:text="@string/google"
+            android:textColor="#303030"
+            android:textSize="16sp"
+            android:lineHeight="21.86dp"
+            tools:ignore="RtlCompat"
+            tools:targetApi="p" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
