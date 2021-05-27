@@ -15,4 +15,5 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="enter_your_password_again">Enter your password again</string>
     <string name="confirm">CONFIRM</string>
+    <string name="hello">hello</string>
 </resources>

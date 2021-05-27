@@ -133,9 +133,26 @@
             android:textColorHint="#c9c9c9"
             android:textColor="@color/black"
             android:fontFamily="@font/regular"
-            android:drawableEnd="@drawable/ic_hide"
             android:backgroundTint="#EAECEF"
             android:paddingBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/checkbox_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            android:button="@null"/>
+
+        <ImageView
+            android:id="@+id/iv_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_hide"
+            tools:ignore="MissingConstraints"
+            android:contentDescription="@string/hello" />
+
 
         <TextView
             android:id="@+id/tv_confirm_password"
@@ -193,7 +210,7 @@
             android:layout_marginStart="41dp"
             android:layout_marginEnd="41dp"
             android:paddingTop="14dp"
-            android:paddingBottom="10dp"
+            android:paddingBottom="12dp"
             android:fontFamily="@font/semibold"/>
 
 
